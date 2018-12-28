@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1826810921D60CC900B79BBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826810821D60CC900B79BBE /* AppDelegate.swift */; };
+		1826810E21D60CC900B79BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1826810C21D60CC900B79BBE /* Main.storyboard */; };
+		1826811021D60CC900B79BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826810F21D60CC900B79BBE /* Assets.xcassets */; };
+		1826811321D60CC900B79BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1826811121D60CC900B79BBE /* LaunchScreen.storyboard */; };
+		1826811821D60CCA00B79BBE /* RidingNav WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1826811721D60CCA00B79BBE /* RidingNav WatchKit App.app */; };
+		1826811E21D60CCA00B79BBE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1826811C21D60CCA00B79BBE /* Interface.storyboard */; };
+		1826812021D60CCA00B79BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826811F21D60CCA00B79BBE /* Assets.xcassets */; };
+		1826812721D60CCA00B79BBE /* RidingNav WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1826812621D60CCA00B79BBE /* RidingNav WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1826812C21D60CCA00B79BBE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826812B21D60CCA00B79BBE /* InterfaceController.swift */; };
+		1826812E21D60CCA00B79BBE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826812D21D60CCA00B79BBE /* ExtensionDelegate.swift */; };
+		1826813021D60CCA00B79BBE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826812F21D60CCA00B79BBE /* NotificationController.swift */; };
+		1826813221D60CCB00B79BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826813121D60CCB00B79BBE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1826811921D60CCA00B79BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182680FD21D60CC900B79BBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1826811621D60CCA00B79BBE;
+			remoteInfo = "RidingNav WatchKit App";
+		};
+		1826812821D60CCA00B79BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182680FD21D60CC900B79BBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1826812521D60CCA00B79BBE;
+			remoteInfo = "RidingNav WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1826813A21D60CCB00B79BBE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1826812721D60CCA00B79BBE /* RidingNav WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1826813E21D60CCB00B79BBE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1826811821D60CCA00B79BBE /* RidingNav WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1826810521D60CC900B79BBE /* RidingNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RidingNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1826810821D60CC900B79BBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1826810D21D60CC900B79BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1826810F21D60CC900B79BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1826811221D60CC900B79BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1826811421D60CC900B79BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1826811721D60CCA00B79BBE /* RidingNav WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RidingNav WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1826811D21D60CCA00B79BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1826811F21D60CCA00B79BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1826812121D60CCA00B79BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1826812621D60CCA00B79BBE /* RidingNav WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RidingNav WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1826812B21D60CCA00B79BBE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1826812D21D60CCA00B79BBE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1826812F21D60CCA00B79BBE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1826813121D60CCB00B79BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1826813321D60CCB00B79BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1826813421D60CCB00B79BBE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1826810221D60CC900B79BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1826812321D60CCA00B79BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182680FC21D60CC900B79BBE = {
+			isa = PBXGroup;
+			children = (
+				1826810721D60CC900B79BBE /* RidingNav */,
+				1826811B21D60CCA00B79BBE /* RidingNav WatchKit App */,
+				1826812A21D60CCA00B79BBE /* RidingNav WatchKit Extension */,
+				1826810621D60CC900B79BBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1826810621D60CC900B79BBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1826810521D60CC900B79BBE /* RidingNav.app */,
+				1826811721D60CCA00B79BBE /* RidingNav WatchKit App.app */,
+				1826812621D60CCA00B79BBE /* RidingNav WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1826810721D60CC900B79BBE /* RidingNav */ = {
+			isa = PBXGroup;
+			children = (
+				1826814321D60CEF00B79BBE /* Classes */,
+				1826814221D60CD800B79BBE /* Source */,
+			);
+			path = RidingNav;
+			sourceTree = "<group>";
+		};
+		1826811B21D60CCA00B79BBE /* RidingNav WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1826811C21D60CCA00B79BBE /* Interface.storyboard */,
+				1826811F21D60CCA00B79BBE /* Assets.xcassets */,
+				1826812121D60CCA00B79BBE /* Info.plist */,
+			);
+			path = "RidingNav WatchKit App";
+			sourceTree = "<group>";
+		};
+		1826812A21D60CCA00B79BBE /* RidingNav WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1826812B21D60CCA00B79BBE /* InterfaceController.swift */,
+				1826812D21D60CCA00B79BBE /* ExtensionDelegate.swift */,
+				1826812F21D60CCA00B79BBE /* NotificationController.swift */,
+				1826813121D60CCB00B79BBE /* Assets.xcassets */,
+				1826813321D60CCB00B79BBE /* Info.plist */,
+				1826813421D60CCB00B79BBE /* PushNotificationPayload.apns */,
+			);
+			path = "RidingNav WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1826814221D60CD800B79BBE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1826811421D60CC900B79BBE /* Info.plist */,
+				1826811121D60CC900B79BBE /* LaunchScreen.storyboard */,
+				1826810F21D60CC900B79BBE /* Assets.xcassets */,
+				1826810C21D60CC900B79BBE /* Main.storyboard */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1826814321D60CEF00B79BBE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1826814521D60E1600B79BBE /* Config */,
+				1826814621D60E2100B79BBE /* Nav */,
+				1826814421D60CF800B79BBE /* AppleDelegate */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1826814421D60CF800B79BBE /* AppleDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1826810821D60CC900B79BBE /* AppDelegate.swift */,
+			);
+			path = AppleDelegate;
+			sourceTree = "<group>";
+		};
+		1826814521D60E1600B79BBE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		1826814621D60E2100B79BBE /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1826810421D60CC900B79BBE /* RidingNav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1826813F21D60CCB00B79BBE /* Build configuration list for PBXNativeTarget "RidingNav" */;
+			buildPhases = (
+				1826810121D60CC900B79BBE /* Sources */,
+				1826810221D60CC900B79BBE /* Frameworks */,
+				1826810321D60CC900B79BBE /* Resources */,
+				1826813E21D60CCB00B79BBE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1826811A21D60CCA00B79BBE /* PBXTargetDependency */,
+			);
+			name = RidingNav;
+			productName = RidingNav;
+			productReference = 1826810521D60CC900B79BBE /* RidingNav.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1826811621D60CCA00B79BBE /* RidingNav WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1826813B21D60CCB00B79BBE /* Build configuration list for PBXNativeTarget "RidingNav WatchKit App" */;
+			buildPhases = (
+				1826811521D60CCA00B79BBE /* Resources */,
+				1826813A21D60CCB00B79BBE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1826812921D60CCA00B79BBE /* PBXTargetDependency */,
+			);
+			name = "RidingNav WatchKit App";
+			productName = "RidingNav WatchKit App";
+			productReference = 1826811721D60CCA00B79BBE /* RidingNav WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1826812521D60CCA00B79BBE /* RidingNav WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1826813721D60CCB00B79BBE /* Build configuration list for PBXNativeTarget "RidingNav WatchKit Extension" */;
+			buildPhases = (
+				1826812221D60CCA00B79BBE /* Sources */,
+				1826812321D60CCA00B79BBE /* Frameworks */,
+				1826812421D60CCA00B79BBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RidingNav WatchKit Extension";
+			productName = "RidingNav WatchKit Extension";
+			productReference = 1826812621D60CCA00B79BBE /* RidingNav WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182680FD21D60CC900B79BBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = xu;
+				TargetAttributes = {
+					1826810421D60CC900B79BBE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1826811621D60CCA00B79BBE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1826812521D60CCA00B79BBE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1826810021D60CC900B79BBE /* Build configuration list for PBXProject "RidingNav" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182680FC21D60CC900B79BBE;
+			productRefGroup = 1826810621D60CC900B79BBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1826810421D60CC900B79BBE /* RidingNav */,
+				1826811621D60CCA00B79BBE /* RidingNav WatchKit App */,
+				1826812521D60CCA00B79BBE /* RidingNav WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1826810321D60CC900B79BBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1826811321D60CC900B79BBE /* LaunchScreen.storyboard in Resources */,
+				1826811021D60CC900B79BBE /* Assets.xcassets in Resources */,
+				1826810E21D60CC900B79BBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1826811521D60CCA00B79BBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1826812021D60CCA00B79BBE /* Assets.xcassets in Resources */,
+				1826811E21D60CCA00B79BBE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1826812421D60CCA00B79BBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1826813221D60CCB00B79BBE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1826810121D60CC900B79BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1826810921D60CC900B79BBE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1826812221D60CCA00B79BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1826813021D60CCA00B79BBE /* NotificationController.swift in Sources */,
+				1826812E21D60CCA00B79BBE /* ExtensionDelegate.swift in Sources */,
+				1826812C21D60CCA00B79BBE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1826811A21D60CCA00B79BBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1826811621D60CCA00B79BBE /* RidingNav WatchKit App */;
+			targetProxy = 1826811921D60CCA00B79BBE /* PBXContainerItemProxy */;
+		};
+		1826812921D60CCA00B79BBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1826812521D60CCA00B79BBE /* RidingNav WatchKit Extension */;
+			targetProxy = 1826812821D60CCA00B79BBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1826810C21D60CC900B79BBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1826810D21D60CC900B79BBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1826811121D60CC900B79BBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1826811221D60CC900B79BBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1826811C21D60CCA00B79BBE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1826811D21D60CCA00B79BBE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1826813521D60CCB00B79BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1826813621D60CCB00B79BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1826813821D60CCB00B79BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL3CN39K6L;
+				INFOPLIST_FILE = "RidingNav WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Riding.com.xu.RidingNav.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		1826813921D60CCB00B79BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL3CN39K6L;
+				INFOPLIST_FILE = "RidingNav WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Riding.com.xu.RidingNav.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		1826813C21D60CCB00B79BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL3CN39K6L;
+				IBSC_MODULE = RidingNav_WatchKit_Extension;
+				INFOPLIST_FILE = "RidingNav WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Riding.com.xu.RidingNav.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		1826813D21D60CCB00B79BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL3CN39K6L;
+				IBSC_MODULE = RidingNav_WatchKit_Extension;
+				INFOPLIST_FILE = "RidingNav WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Riding.com.xu.RidingNav.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		1826814021D60CCB00B79BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL3CN39K6L;
+				INFOPLIST_FILE = RidingNav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Riding.com.xu.RidingNav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1826814121D60CCB00B79BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL3CN39K6L;
+				INFOPLIST_FILE = RidingNav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Riding.com.xu.RidingNav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1826810021D60CC900B79BBE /* Build configuration list for PBXProject "RidingNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1826813521D60CCB00B79BBE /* Debug */,
+				1826813621D60CCB00B79BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1826813721D60CCB00B79BBE /* Build configuration list for PBXNativeTarget "RidingNav WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1826813821D60CCB00B79BBE /* Debug */,
+				1826813921D60CCB00B79BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1826813B21D60CCB00B79BBE /* Build configuration list for PBXNativeTarget "RidingNav WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1826813C21D60CCB00B79BBE /* Debug */,
+				1826813D21D60CCB00B79BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1826813F21D60CCB00B79BBE /* Build configuration list for PBXNativeTarget "RidingNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1826814021D60CCB00B79BBE /* Debug */,
+				1826814121D60CCB00B79BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 182680FD21D60CC900B79BBE /* Project object */;
+}
